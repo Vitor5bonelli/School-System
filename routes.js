@@ -1,6 +1,12 @@
 const port = 55155
-var express = require("express")
-var app = express()
+const express = require("express")
+const app = express()
+
+app.use(express.static("Frontend"))
+
+app.get("/", (req, res) => {
+    res.sendFile("./Frontend/views/index.html", {root: __dirname})
+})
 
 app.listen(port, ()  => {
     console.log(`Server running on port ${port}..`)
