@@ -6,7 +6,6 @@ const app = express()
 app.use(express.static("Frontend"))
 
 app.get("/", (req, res) => {
-    //res.sendFile("./Frontend/views/index.html", {root: __dirname})
     res.sendFile(path.join(__dirname, "Frontend/views", "index.html"))
 })
 
