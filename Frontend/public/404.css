@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(26, 24, 24);
+}
+
+.errorMsg{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.errorMsg div {
+    color: aliceblue;
+    font-size: 40em;
+}
+
+.errorMsg p {
+    color: rgb(162, 166, 170);
+    font-family: 30em;
+}
